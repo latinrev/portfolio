@@ -1,0 +1,34 @@
+[
+  {
+    "name": "DISHONORED",
+    "github": "https://github.com/latinrev",
+    "link": "https://github.com/latinrev",
+    "year": "2019",
+    "stack": "HTML - CSS - JAVASCRIPT",
+    "description": "Landing page honoring the release of the game"
+  },
+  {
+    "name": "OUTRUN",
+    "github": "https://github.com/latinrev",
+    "link": "https://github.com/latinrev",
+    "year": "2020",
+    "stack": "HTML - CSS - JAVASCRIPT",
+    "description": "Wallpaper website showcasing a custom made carousel made with javascript"
+  },
+  {
+    "name": "THOUGHTS",
+    "github": "https://github.com/latinrev",
+    "link": "https://github.com/latinrev",
+    "year": "2022",
+    "stack": "NEXTJS - TYPESCRIPT - SUPABASE",
+    "description": "Mini social network that allows user to share 140 characters thoughts"
+  },
+  {
+    "name": "THOUGHTS",
+    "github": "https://github.com/latinrev",
+    "link": "https://github.com/latinrev",
+    "year": "2022",
+    "stack": "NEXTJS - TYPESCRIPT - SUPABASE",
+    "description": "Mini social network that allows user to share 140 characters thoughts"
+  }
+]
