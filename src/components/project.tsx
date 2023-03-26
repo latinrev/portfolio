@@ -48,7 +48,7 @@ export default function Project({ project, index }: { project: Projects; index: 
       </div>
       <div>
         <div className="info  flex justify-between items-center pt-2 px-6 flex-col gap-5 md:flex-col py-5 lg:flex-row">
-          <span className="tracking-[-.2.5rem] text-[1.5rem] lg:text-general">{project.stack}</span>
+          <span className="tracking-[-.13rem] text-[1.5rem] lg:text-general">{project.stack}</span>
           <span className="text-year pb-2">{project.year}</span>
         </div>
         <hr className="sm:opacity-0 md:opacity-0 lg:opacity-100 opacity-0"></hr>
