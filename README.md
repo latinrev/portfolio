@@ -17,4 +17,4 @@
 
 * Website: 	https://portfolio-revlink.vercel.app
 * Github: [@latinrev](https://github.com/latinrev)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/joellcastillo\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/joellcastillo\/)
+* LinkedIn: [https:\/\/www.linkedin.com\/in\/joellcastillo\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/joellcastillo\/)
