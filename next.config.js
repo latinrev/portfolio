@@ -3,11 +3,11 @@
  */
 const nextConfig = {
   experimental: { appDir: true },
+  optimizeFonts: false,
   images: {
     loader: "akamai",
     path: "",
   },
-  assetPrefix: "./",
 };
 
 module.exports = nextConfig;

@@ -11,11 +11,7 @@ module.exports = {
         general: "3rem",
         descriptions: "1.5rem",
       },
-      fontFamily: {
-        //vt: ["var(--font-custom-vt)"],
-        //vt323: ["VT323"],
-        //vt: ["var(--font-vt)"],
-      },
+      fontFamily: {},
 
       colors: {
         font: "#CED9BF",
