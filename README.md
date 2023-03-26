@@ -9,13 +9,7 @@
 
 ### 🏠 [Homepage](https://github.com/latinrev/portfolio)
 
-### ✨ [Demo](https://portfolio-revlink.vercel.app/)
-
-## Run tests
-
-```sh
-\
-```
+### ✨ [Webpage](https://portfolio-revlink.vercel.app/)
 
 ## Author
 
