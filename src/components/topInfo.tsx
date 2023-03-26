@@ -1,5 +1,6 @@
 "use client";
 import Marquee from "react-fast-marquee";
+import Popover from "./popover";
 export default function TopInfo() {
   return (
     <>
@@ -8,12 +9,17 @@ export default function TopInfo() {
           JOEL CASTILLO - FULL STACK WEB DEVELOPER - JOEL CASTILLO - FULL STACK WEB DEVELOPER -{" "}
         </Marquee>
       </div>
-      <div className="info flex justify-around px-6 py-2 h-[2%]">
+      <div className="info flex justify-around lg:justify-between px-6 py-2 h-[2%]">
         <a className="animate-pulse" download href="https://amethyst-renelle-62.tiiny.site/" target="_blank">
           RESUME
         </a>
         <div className="">OPEN TO WORK</div>
-        <a className="date animate-pulse" href="mailto:joelecastilloj@gmail.com">CONTACT</a>
+        <a className="date animate-pulse" href="mailto:joelecastilloj@gmail.com">
+          CONTACT
+        </a>
+        <div className="">
+          <Popover text="I'm Joel Castillo a Full stack web developer based on the US, inspired by minimalism and creating proudcts that connect the world" />
+        </div>
         <div>
           {new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }).toUpperCase().replace(/,/g, "")}
         </div>

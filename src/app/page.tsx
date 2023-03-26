@@ -14,7 +14,7 @@ export interface Projects {
 
 export default function Home() {
   return (
-    <main className="h-screen bg-black text-font font-vt flex flex-col items-stretch justify-items-stretch ">
+    <main className="h-screen bg-black text-font font-vt flex flex-col items-stretch justify-items-stretch overflow-x-hidden">
       <TopInfo />
       <ProjectContainer projects={projects}></ProjectContainer>
     </main>

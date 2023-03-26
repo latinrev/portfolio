@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "JOEL CASTILLO PORTFOLIO",
-  description: "FULL STACK WEB DESIGN PORTFOLIO --- JOEL CASTILLO",
+  title: "Joel Castillo",
+  description: "I'm Joel Castillo a Full stack web developer based on the US, inspired by minimalism and creating proudcts that connect the world",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
