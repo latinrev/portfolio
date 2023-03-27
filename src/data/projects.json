@@ -8,12 +8,12 @@
     "description": "MY FULL STACK WEB DEVELOPER PORTFOLIO"
   },
     {
-    "name": "THOUGHTS",
-    "github": "https://github.com/latinrev",
-    "link": "https://github.com/latinrev",
-    "year": "2022",
-    "stack": "NEXTJS - TYPESCRIPT - SUPABASE",
-    "description": "WIP--Mini social network that allows user to share 140 characters thoughts--WIP"
+    "name": "HTW",
+    "github": "https://github.com/latinrev/weather/",
+    "link": "https://weather-psi-ten.vercel.app/",
+    "year": "2023",
+    "stack": "NEXTJS - TYPESCRIPT - QUOTABLE - OPEN-METEO - PEXELS",
+    "description": "Small weather app using NEXTJS with SSG to render time, weather and quotes"
   },
   {
     "name": "OUTRUN",
