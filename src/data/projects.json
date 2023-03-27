@@ -13,7 +13,7 @@
     "link": "https://weather-revlink.vercel.app/",
     "year": "2023",
     "stack": "NEXTJS - TYPESCRIPT - QUOTABLE - OPEN-METEO - PEXELS",
-    "description": "Small weather app using NEXTJS with SSG to render time, weather and quotes"
+    "description": "Small weather app using NEXTJS with SSG to render time, weather and quotes based on geolocation"
   },
   {
     "name": "OUTRUN",
