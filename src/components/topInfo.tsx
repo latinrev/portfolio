@@ -18,7 +18,7 @@ export default function TopInfo() {
           CONTACT
         </a>
         <div className="">
-          <Popover text="I'm Joel Castillo a Full stack web developer based on the US, inspired by minimalism and creating proudcts that connect the world" />
+          <Popover text="I'm Joel Castillo a Full stack web developer based on the US, inspired by minimalism and creating products that connect the world" />
         </div>
         <div>
           {new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }).toUpperCase().replace(/,/g, "")}
