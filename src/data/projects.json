@@ -22,5 +22,13 @@
     "year": "2023",
     "stack": "VUE - TAILWINDCS",
     "description": "Custom made Landing page for a sweets business in the Dallas area"
+  },
+    {
+    "name": "Eonil",
+    "github": "https://github.com/eonil",
+    "link": "https://www.npmjs.com/package/eonil",
+    "year": "2020",
+    "stack": "NodeJS Javascript SocketIO",
+    "description": "Eonil is a wrapper for Express and SocketIO to create a server in one line"
   }
 ]
