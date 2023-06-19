@@ -1,4 +1,12 @@
 [
+    {
+    "name": "ANIME TRACKER",
+    "github": "https://github.com/latinrev/animetracker",
+    "link": "https://animetracker-kappa.vercel.app/",
+    "year": "2023",
+    "stack": "NEXTJS - TAILWINDCSS - TYPESCRIPT- MONGODB",
+    "description": "Custom made page to keep track of animes watched"
+  },
   {
     "name": "PORTFOLIO",
     "github": "https://github.com/latinrev/portfolio",
