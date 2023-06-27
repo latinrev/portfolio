@@ -36,7 +36,7 @@
     "github": "https://github.com/latinrev/Eonil",
     "link": "https://www.npmjs.com/package/eonil",
     "year": "2020",
-    "stack": "NodeJS Javascript SocketIO",
+    "stack": "NODEJS - JAVASCRIPT - SOCKETIO",
     "description": "Eonil is a wrapper for Express and SocketIO to create a server in one line"
   }
 ]
