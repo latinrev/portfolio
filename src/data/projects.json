@@ -1,19 +1,11 @@
 [
     {
-    "name": "ANIME TRACKER",
-    "github": "https://github.com/latinrev/animetracker",
-    "link": "https://animetracker-kappa.vercel.app/",
-    "year": "2023",
-    "stack": "NEXTJS - TAILWINDCSS - TYPESCRIPT- MONGODB",
-    "description": "Custom made page to keep track of animes watched"
-  },
-  {
-    "name": "PORTFOLIO",
-    "github": "https://github.com/latinrev/portfolio",
-    "link": "https://portfolio-revlink.vercel.app",
-    "year": "2023",
-    "stack": "NEXTJS - TAILWINDCSS - TYPESCRIPT",
-    "description": "MY FULL STACK WEB DEVELOPER PORTFOLIO"
+    "name": "Resource Collection",
+    "github": "https://github.com/latinrev/resources",
+    "link": "https://ccjc-resources.netlify.app/",
+    "year": "2024",
+    "stack": "ASTRO - TAILWINDCSS - SHADCN - MAKE",
+    "description": "Custom resource collection that syncs with my private notion page and redeploys every 2 hours via a make.com webhook"
   },
     {
     "name": "HTW",
