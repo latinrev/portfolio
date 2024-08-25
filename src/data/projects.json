@@ -1,4 +1,12 @@
 [
+        {
+    "name": "ESLIA",
+    "github": "https://github.com/latinrev/ESLIA",
+    "link": "https://www.esliafacil.com/",
+    "year": "2024",
+    "stack": "NEXTJS - TAILWINDCSS - SHADCN - SUPABASE - OPENAI",
+    "description": "Learn ESL(English as a second language) with interactive worksheets and vocabulary exercises using AI"
+  },
     {
     "name": "FileBurn",
     "github": "https://github.com/latinrev/",
