@@ -1,4 +1,12 @@
 [
+   {
+    "name": "CARDAI",
+    "github": "https://github.com/latinrev/",
+    "link": "https://cardai.studio/",
+    "year": "2024",
+    "stack": "NEXTJS - TAILWINDCSS - SHADCN - STRIPE - FAL AI",
+    "description": "AI Custom Card Creator for Every Season and Occasion"
+  },
         {
     "name": "ESLIA",
     "github": "https://github.com/latinrev/ESLIA",
@@ -10,7 +18,7 @@
     {
     "name": "FileBurn",
     "github": "https://github.com/latinrev/",
-    "link": "https://fileburn.vercel.app/",
+    "link": "https://fileburn.io/",
     "year": "2024",
     "stack": "NEXTJS - TAILWINDCSS - SHADCN - SUPABASE",
     "description": "Ephemeral File uploader, allows you to upload files and get download links for a set amount of time "
@@ -18,7 +26,7 @@
     {
     "name": "Collection",
     "github": "https://github.com/latinrev/resources",
-    "link": "https://ccjc-resources.netlify.app/",
+    "link": "https://collection.joelcastillo.dev/",
     "year": "2024",
     "stack": "ASTRO - TAILWINDCSS - SHADCN - MAKE - NOTION",
     "description": "Custom resource collection that syncs with my private notion page and redeploys every 2 hours via a make.com webhook"
