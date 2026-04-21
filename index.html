@@ -114,8 +114,16 @@
     color: var(--ink); font-weight: 400;
     font-family: var(--sans); font-size: 14px;
   }
+  header.site nav { white-space: nowrap; }
   header.site nav a { text-decoration: none; color: var(--ink-mute); margin-left: 22px; }
   header.site nav a:hover { color: var(--accent); }
+  .nav-hamburger {
+    display: none;
+    background: none; border: none; padding: 4px;
+    cursor: pointer; color: var(--ink); line-height: 1;
+    margin-left: 16px;
+  }
+  .nav-hamburger svg { display: block; width: 22px; height: 22px; }
 
   /* ========== Hero ========== */
   .hero {
@@ -619,22 +627,58 @@
 
   /* ========== Responsive ========== */
   @media (max-width: 720px) {
+    body { overflow-x: hidden; }
     .page { padding: 0 20px; }
+    section { padding-bottom: 40px; }
     .hero { padding: 56px 0 48px; }
     .hero h1 { font-size: 46px; }
     .hero .lede { font-size: 18px; }
     h2 { font-size: 32px; }
     .featured-project { padding: 24px 20px; }
     .featured-project h3 { font-size: 38px; }
-    .other-projects { grid-template-columns: 1fr; gap: 0; }
-    .other-projects .proj-card:nth-child(2) { margin-top: 0; border-top: 1px solid var(--rule); padding-top: 24px; }
+    .other-projects { grid-template-columns: 1fr; gap: 0; margin-bottom: 0; }
+    .other-projects .proj-card:not(:first-child) { margin-top: 0; border-top: 1px solid var(--rule); padding-top: 32px; }
+    .other-projects .proj-card { height: auto; display: block; padding-bottom: 32px; }
+    .other-projects .proj-card .project-actions { margin-top: 18px; }
     .thin-item { grid-template-columns: 1fr; gap: 4px; padding: 16px 0; }
     .thin-item .year { text-align: left; }
     .exp-item { grid-template-columns: 1fr; gap: 6px; padding: 20px 0; }
     .contact-list li { grid-template-columns: 80px 1fr; gap: 14px; }
-    header.site nav a { margin-left: 14px; }
     .stack-rows { grid-template-columns: 90px 1fr; }
+    .shot { aspect-ratio: 16 / 10; width: 100%; max-width: 100%; }
+    .featured-project .shot { max-width: 100%; }
+    .project-actions { flex-direction: column; align-items: flex-start; }
+
+    /* Hamburger nav */
+    .nav-hamburger { display: block; }
+    header.site nav { white-space: normal; }
+    header.site nav > a,
+    header.site nav > .mode-toggle { display: none; }
   }
+
+  /* Mobile nav overlay — appended to body so it escapes header's stacking context */
+  .nav-mobile-menu {
+    display: none;
+    position: fixed; inset: 0;
+    background: var(--paper);
+    z-index: 9999;
+    flex-direction: column;
+    padding: 72px 28px 40px;
+  }
+  .nav-mobile-menu.open { display: flex; }
+  .nav-mobile-menu a {
+    font-family: var(--sans); font-size: 20px;
+    text-decoration: none; color: var(--ink-mute);
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav-mobile-menu a:hover { color: var(--accent); }
+  .nav-mobile-menu-close {
+    position: absolute; top: 24px; right: 24px;
+    background: none; border: none; cursor: pointer;
+    color: var(--ink); padding: 4px;
+  }
+  .nav-mobile-menu-close svg { width: 22px; height: 22px; display: block; }
 
   /* ========== Entry animations ========== */
   @keyframes fadeUp {
@@ -696,6 +740,9 @@
   <header class="site">
     <span class="mark">Joel Castillo</span>
     <nav>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
       <a href="#company">Company</a>
       <a href="#work">Projects</a>
       <a href="#experience">Experience</a>
@@ -1066,6 +1113,31 @@
     else if (d.type === '__deactivate_edit_mode') document.getElementById('tweaks').classList.remove('open');
   });
   try { window.parent.postMessage({ type: '__edit_mode_available' }, '*'); } catch {}
+
+  // Hamburger nav — overlay appended to body to escape header's transform stacking context
+  (function () {
+    const hamburger = document.getElementById('nav-hamburger');
+    if (!hamburger) return;
+    const menu = document.createElement('div');
+    menu.className = 'nav-mobile-menu';
+    menu.innerHTML =
+      '<button class="nav-mobile-menu-close" aria-label="Close navigation">' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">' +
+          '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>' +
+        '</svg>' +
+      '</button>' +
+      '<a href="#company">Company</a>' +
+      '<a href="#work">Projects</a>' +
+      '<a href="#experience">Experience</a>' +
+      '<a href="#contact">Contact</a>' +
+      '<a href="/JOELCASTILLO.pdf" download>Resume</a>';
+    document.body.appendChild(menu);
+    function open() { menu.classList.add('open'); }
+    function close() { menu.classList.remove('open'); }
+    hamburger.addEventListener('click', open);
+    menu.querySelector('.nav-mobile-menu-close').addEventListener('click', close);
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+  })();
 
   // Scroll-reveal for sections and their children
   (function () {
